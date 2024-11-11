@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@import '../styles/variables.scss';
+
+header {
+    background: $background-gradient-600;
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        height: 100dvh;
+    }
+
+    .description {
+        margin-left: 25dvh;
+        margin-top: 10dvh;
+
+        .logo {
+            margin-bottom: 7dvh;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .main-title {
+            font-family: 'Inter', serif, sans-serif;
+            font-size: 4rem;
+            margin-bottom: 6dvh;
+            color: $neutral-900;
+        }
+
+        .paragraph-description {
+            font-family: 'Inter', serif, sans-serif;
+            font-size: 1rem;
+            color: $neutral-800;
+            line-height: 1.5rem;
+        }
+    }
+
+  #calculator {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 120dvh;
+    top: -30dvh;
+    background-color: white;
+  }
+}
+
+body {
+    .fifth-content {
+        width: 100dvh;
+        display: flex;
+        position: relative;
+        left: 60dvh;
+        margin-bottom: 3dvh;
+    }
+}

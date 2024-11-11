@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+header {
+  background: linear-gradient(290deg, rgb(214, 230, 254) 0%, rgba(214, 252, 254, 0) 100%);
+}
+header #container {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+header .description {
+  margin-left: 25dvh;
+  margin-top: 10dvh;
+}
+header .description .logo {
+  margin-bottom: 7dvh;
+  max-width: 100%;
+  height: auto;
+}
+header .description .main-title {
+  font-family: "Inter", serif, sans-serif;
+  font-size: 4rem;
+  margin-bottom: 6dvh;
+  color: hsl(215, 31%, 21%);
+}
+header .description .paragraph-description {
+  font-family: "Inter", serif, sans-serif;
+  font-size: 1rem;
+  color: hsl(200, 24%, 44%);
+  line-height: 1.5rem;
+}
+header #calculator {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 120dvh;
+  top: -30dvh;
+  background-color: white;
+}
+
+body .fifth-content {
+  width: 100dvh;
+  display: flex;
+  position: relative;
+  left: 60dvh;
+  margin-bottom: 3dvh;
+}/*# sourceMappingURL=styles.css.map */
