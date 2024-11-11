@@ -8,6 +8,7 @@
 
 header {
   background: linear-gradient(290deg, rgb(214, 230, 254) 0%, rgba(214, 252, 254, 0) 100%);
+  width: 160dvh;
 }
 header #container {
   display: flex;
@@ -35,12 +36,23 @@ header .description .paragraph-description {
   color: hsl(200, 24%, 44%);
   line-height: 1.5rem;
 }
+header .blue {
+  width: 30dvh;
+  height: 100dvh;
+  background: #E1E7FE;
+  position: absolute;
+  z-index: 3;
+  left: 160dvh;
+  border-radius: 0dvh 0dvh 5dvh 0dvh;
+}
 header #calculator {
   display: flex;
   flex-direction: column;
   position: relative;
+  z-index: 6;
   left: 120dvh;
   top: -30dvh;
+  width: 50dvh;
   background-color: white;
 }
 
