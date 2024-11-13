@@ -1,1 +1,196 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+main {
+  width: 100%;
+}
+main #second-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5dvh;
+}
+main #second-container .guy-photo {
+  flex: 1;
+  margin-left: 15dvh;
+}
+main #second-container .guy-photo .man-eating {
+  max-width: 100%;
+  height: auto;
+}
+main #second-container .second-description {
+  flex: 1;
+  position: relative;
+  top: 10dvh;
+  margin-left: 10dvh;
+}
+main #second-container .second-description .second-description-title {
+  font-family: "Inter", serif, sans-serif;
+  font-size: 3rem;
+  color: hsl(215, 31%, 21%);
+  margin-top: 7dvh;
+  margin-bottom: 5dvh;
+}
+main #second-container .second-description .second-description-paragraph {
+  font-family: "Inter", serif, sans-serif;
+  font-size: 1rem;
+  color: hsl(200, 24%, 44%);
+  line-height: 1.5rem;
+}
+main .grid-container {
+  display: flex;
+  margin-top: 10dvh;
+  margin-left: 12dvh;
+  background: linear-gradient(290deg, rgba(214, 230, 254, 0.3) 0%, rgba(214, 252, 254, 0) 100%);
+  width: 190dvh;
+  height: 50dvh;
+  margin-bottom: 13dvh;
+  border-radius: 0dvh 5dvh 5dvh 0dvh;
+}
+main .grid-container .card {
+  margin-top: 7dvh;
+  margin-right: 9dvh;
+}
+main .grid-container .card .card-img {
+  margin-bottom: 3dvh;
+}
+main .grid-container .card .card-img .card-photo {
+  max-width: 100%;
+  height: auto;
+}
+main .grid-container .card .card-title {
+  margin-bottom: 3dvh;
+}
+main .grid-container .card .card-title .card-h3-title {
+  font-family: "Inter", serif, sans-serif;
+  color: hsl(215, 31%, 21%);
+  font-size: 1.2rem;
+}
+main .grid-container .card .card-paragraph .card-explanation {
+  font-family: "Inter", serif, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: hsl(200, 24%, 44%);
+}
+main .third-content {
+  display: flex;
+  position: relative;
+  margin-left: 3dvh;
+}
+main .third-content .limitations-bmi {
+  width: 100dvh;
+  margin-right: 10dvh;
+}
+main .third-content .limitations-bmi .title-limitations {
+  font-family: "Inter", serif, sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 4dvh;
+  color: hsl(215, 31%, 21%);
+}
+main .third-content .limitations-bmi .third-content-explanation {
+  font-family: "Inter", serif, sans-serif;
+  font-size: 1rem;
+  color: hsl(200, 24%, 44%);
+  line-height: 1.5rem;
+}
+main .third-content .gender {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 4dvh;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 55dvh;
+  height: 35dvh;
+}
+main .third-content .gender .icon-img {
+  max-width: 100%;
+  height: auto;
+}
+main .third-content .gender span {
+  font-family: "Inter", serif, sans-serif;
+  font-size: 1.1rem;
+  color: hsl(215, 31%, 21%);
+}
+main .third-content .gender .third-content-explanation {
+  margin-top: 3dvh;
+  font-family: "Inter", serif, sans-serif;
+  font-size: 1rem;
+  color: hsl(200, 24%, 44%);
+}
+main .fourth-content {
+  display: flex;
+  position: relative;
+  margin-top: 6dvh;
+  margin-left: 70dvh;
+  margin-bottom: 7dvh;
+}
+main .fourth-content .age {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 4dvh;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 55dvh;
+  height: 35dvh;
+  margin-right: 5dvh;
+}
+main .fourth-content .muscle {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 4dvh;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 55dvh;
+  height: 35dvh;
+  margin-right: 5dvh;
+}
+main .fourth-content .icon-img {
+  max-width: 100%;
+  height: auto;
+}
+main .fourth-content span {
+  font-family: "Inter", serif, sans-serif;
+  font-size: 1.1rem;
+  color: hsl(215, 31%, 21%);
+}
+main .fourth-content .third-content-explanation {
+  margin-top: 3dvh;
+  font-family: "Inter", serif, sans-serif;
+  font-size: 1rem;
+  color: hsl(200, 24%, 44%);
+}
+main .fifth-content {
+  display: flex;
+  position: relative;
+  margin-top: 6dvh;
+  margin-left: 1dvh;
+  margin-bottom: 7dvh;
+  width: 100dvh;
+}
+main .fifth-content .pregnancy {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 4dvh;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 95dvh;
+  height: 45dvh;
+  margin-right: 5dvh;
+}
+main .fifth-content .race {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 4dvh;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 95dvh;
+  height: 45dvh;
+  margin-right: 5dvh;
+}
+main .fifth-content .icon-img {
+  max-width: 100%;
+  height: auto;
+}
+main .fifth-content span {
+  font-family: "Inter", serif, sans-serif;
+  font-size: 1.1rem;
+  color: hsl(215, 31%, 21%);
+}
+main .fifth-content .third-content-explanation {
+  margin-top: 3dvh;
+  font-family: "Inter", serif, sans-serif;
+  font-size: 1rem;
+  color: hsl(200, 24%, 44%);
+}/*# sourceMappingURL=main.css.map */

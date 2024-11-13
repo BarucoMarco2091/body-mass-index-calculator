@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import '../styles/variables.scss';
+
+header {
+    background: $background-gradient-600;
+    width: 160dvh;
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        height: 100dvh;
+    }
+
+    .description {
+        margin-left: 25dvh;
+        margin-top: 10dvh;
+
+        .logo {
+            margin-bottom: 7dvh;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .main-title {
+            font-family: 'Inter', serif, sans-serif;
+            font-size: 4rem;
+            margin-bottom: 6dvh;
+            color: $neutral-900;
+        }
+
+        .paragraph-description {
+            font-family: 'Inter', serif, sans-serif;
+            font-size: 1rem;
+            color: $neutral-800;
+            line-height: 1.5rem;
+        }
+    }
+
+    .blue {
+        width: 30dvh;
+        height: 100dvh;
+        background: $accent-500-op;
+        position: absolute;
+        z-index: 3;
+        left: 160dvh;
+        border-radius: 0dvh 0dvh 5dvh 0dvh;
+    }
+
+    #calculator {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 6;
+        left: 120dvh;
+        top: -65dvh;
+        width: 70dvh;
+        background-color: white;
+        border-radius: 2dvh;
+
+        .calculator-paragraph {
+            padding-top: 3dvh;
+            margin-left: 2dvh;
+            font-family: 'Inter', sans-serif, serif;
+            font-size: 1.3rem;
+            color: black;
+        }
+
+        .units {
+            margin-left: 2dvh;
+            margin-top: 3dvh;
+
+            #metric {
+                margin-right: 2dvh;
+                margin-bottom: 3dvh;
+            }
+
+            label {
+                margin-right: 2dvh;
+                font-family: 'Inter', sans-serif, serif;
+                font-size: 1rem;
+            }
+
+            #imperial {
+                margin-right: 2dvh;
+                margin-bottom: 3dvh;
+            }
+
+            .description-bmi {
+                display: flex;
+
+                label {
+                    margin-right: 22dvh;
+                    margin-bottom: 4dvh;
+                    font-family: 'Inter', sans-serif, serif;
+                    font-size: 1rem;
+                    color: $neutral-800;
+                }
+            }
+
+            .data-bmi {
+                display: flex;
+                margin-bottom: 4dvh;
+
+                #height {
+                    margin-right: 2dvh;
+                    height: 5dvh;
+                    border-radius: 1dvh;
+                }
+
+                #weight {
+                    margin-right: 2dvh;
+                    height: 5dvh;
+                    border-radius: 1dvh;
+                }
+            }
+
+            .btn-calculate {
+                border: none;
+                background-color: $primary;
+                color: $neutral-900;
+                cursor: pointer;
+                font-family: 'Inter', sans-serif, serif;
+                margin-bottom: 2dvh;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .btn-calculate:hover {
+                color: $accent-500;
+            }
+        }
+
+        .results {
+            background-color: $accent-500;
+            width: 60dvh;
+            margin-left: 2dvh;
+            margin-bottom: 3dvh;
+            border-radius: 0dvh 12dvh 12dvh 0dvh;
+
+            .results-paragraph {
+                color: $primary;
+                margin-top: 3dvh;
+                margin-bottom: 4dvh;
+                margin-left: 2dvh;
+                font-family: 'Inter', sans-serif, serif;
+                font-size: 1.5rem;
+            }
+
+            .results-second-paragraph {
+                color: $primary;
+                margin-bottom: 4dvh;
+                margin-left: 2dvh;
+                font-family: 'Inter', sans-serif, serif;
+                font-size: 1rem;
+            }
+        }
+    }
+}

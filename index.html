@@ -28,24 +28,25 @@
             </div>
             <div class="blue"></div>
             <div id="calculator">
-                <p>Enter yours details below</p>
+                <p class="calculator-paragraph">Enter yours details below</p>
                 <div class="units">
                     <input type="radio" name="metric" id="metric">
                     <label for="metric">Metric</label>
                     <input type="radio" name="imperial" id="imperial">
                     <label for="imperial">Imperial</label>
                     <div class="description-bmi">
-                        <label for="height">Height</label>
-                        <label for="weight">Weight</label>
+                        <label for="height">Height (m/in)</label>
+                        <label for="weight">Weight (kg/lb)</label>
                     </div>
                     <div class="data-bmi">
                         <input type="text" name="height" id="height" placeholder="0">
                         <input type="text" name="weight" id="weight" placeholder="0">
                     </div>
+                    <button class="btn-calculate" onclick="calculate()">Calculate</button>
                 </div>
                 <div class="results">
-                    <p>Welcome!</p>
-                    <p>Enter your height and weight and you’ll see your BMI result here</p>
+                    <p class="results-paragraph">Welcome!</p>
+                    <p class="results-second-paragraph">Enter your height and weight and you’ll see your BMI result here</p>
                 </div>
             </div>
         </div>
@@ -53,94 +54,86 @@
     <main>
         <div id="second-container">
             <div class="guy-photo">
-                <img src="assets/image-man-eating.webp" alt="man-eating">
+                <img class="man-eating" src="assets/image-man-eating.webp" alt="man-eating">
             </div>
             <div class="second-description">
-                <h2>What your BMI<br>result means</h2>
-                <p>A BMI range of 18.5 to 24.9 is<br>considered a 'healthy weight.'<br>Maintaining a healthy weight may
-                    lower<br>your chances of experiencing health<br>issues later on, such as obesity and<br>type 2
-                    diabetes. Aim for a nutritious<br>diet with reduced fat and sugar<br>content, incorporating ample
-                    fruits and<br>vegetables. Additionally, strive for<br>regular physical activity, ideally about<br>30
-                    minutes daily for five days a week.</p>
+                <h2 class="second-description-title">What your BMI<br>result means</h2>
+                <p class="second-description-paragraph">A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'<br>Maintaining a healthy weight may lower your<br>chances of experiencing health issues later on, such as<br>obesity and type 2 diabetes. Aim for a nutritious diet<br>with reduced fat and sugar content incorporating<br>ample fruits and vegetables. Additionally, strive for<br>regular physical activity, ideally about 30 minutes daily<br>for five days a week.</p>
             </div>
         </div>
         <div class="grid-container">
             <div class="card">
                 <div class="card-img">
-                    <img src="assets/icon-eating.svg" alt="icon-eating">
+                    <img class="card-photo" src="assets/icon-eating.svg" alt="icon-eating">
                 </div>
                 <div class="card-title">
-                    <h3>Healthy eating</h3>
+                    <h3 class="card-h3-title">Healthy eating</h3>
                 </div>
                 <div class="card-paragraph">
-                    <p>Healthy eating promotes weight control,<br>disease prevention, better digestion,<br>immunity,
-                        mental clarity and mood.</p>
+                    <p class="card-explanation">Healthy eating promotes weight control,<br>disease prevention, better digestion,<br>immunity, mental clarity and mood.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-img">
-                    <img src="assets/icon-exercise.svg" alt="icon-exercise">
+                    <img class="card-photo" src="assets/icon-exercise.svg" alt="icon-exercise">
                 </div>
                 <div class="card-title">
-                    <h3>Regular exercise</h3>
+                    <h3 class="card-h3-title">Regular exercise</h3>
                 </div>
                 <div class="card-paragraph">
-                    <p>Exercise improves fitness, aids weight control, elevates mood, and<br>reduces disease risk,
-                        fostering wellness and longevity.</p>
+                    <p class="card-explanation">Exercise improves fitness, aids weight<br>control, elevates mood, and reduces disease<br>risk, fostering wellness and longevity.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-img">
-                    <img src="assets/icon-sleep.svg" alt="icon-sleep">
+                    <img class="card-photo" src="assets/icon-sleep.svg" alt="icon-sleep">
                 </div>
                 <div class="card-title">
-                    <h3>Adequate sleep</h3>
+                    <h3 class="card-h3-title">Adequate sleep</h3>
                 </div>
                 <div class="card-paragraph">
-                    <p>Sleep enhances mental clarity, emotional stability, and physical<br>wellness, promoting overall
-                        restoration and rejuvenation.</p>
+                    <p class="card-explanation">Sleep enhances mental clarity, emotional<br>stability, and physical wellness, promoting<br>overall restoration and rejuvenation.</p>
                 </div>
             </div>
-            <div class="third-content">
-                <div class="limitations-bmi">
-                    <h2>Limitations of BMI</h2>
-                    <p>Although BMI is often a practical indicator of healthy weight, it is not<br>suited for every
-                        person. Specific groups should carefully consider their<br>BMI outcomes, and in certain cases,
-                        the measurement may not be<br>beneficial to use.</p>
-                </div>
-                <div class="gender">
-                    <img src="assets/icon-gender.svg" alt="icon-gender">
-                    <span>Gender</span>
-                    <p>The development and body fat<br>composition of girls and boys vary with<br>age. Consequently, a child's age and<br>gender are considered when evaluating<br>their BMI.</p>
-                </div>
+        </div>
+        <div class="third-content">
+            <div class="limitations-bmi">
+                <h2 class="title-limitations">Limitations of BMI</h2>
+                <p class="third-content-explanation">Although BMI is often a practical indicator of healthy weight, it is not<br>suited for every person. Specific groups should carefully consider their<br>BMI outcomes, and in certain cases, the measurement may not be<br>beneficial to use.</p>
             </div>
-            <div class="fourth-content">
-                <div class="age">
-                    <img src="assets/icon-age.svg" alt="icon-age">
-                    <span>Age</span>
-                    <p>In aging individuals, increased body fat<br>and muscle loss may cause BMI to<br>underestimate body fat content.</p>
-                </div>
-                <div class="muscle">
-                    <img src="assets/icon-muscle.svg" alt="icon-muscle">
-                    <span>Muscle</span>
-                    <p>BMI may misclassify muscular<br>individuals as overweight or obese, as<br>it doesn't differentiate muscle from fat.</p>
-                </div>
+            <div class="gender">
+                <img class="icon-img" src="assets/icon-gender.svg" alt="icon-gender">
+                <span>Gender</span>
+                <p class="third-content-explanation">The development and body fat<br>composition of girls and boys vary with<br>age. Consequently, a child's age and<br>gender are considered when evaluating<br>their BMI.</p>
             </div>
-            <div class="fifth-content">
-                <div class="pregnancy">
-                    <img src="assets/icon-pregnancy.svg" alt="icon-pregnancy">
-                    <span>Pregnancy</span>
-                    <p>Expectant mothers experience weight<br>gain due to their growing baby.<br>Maintaining a healthy pre-pregnancy<br>BMI is advisable to minimise health<br>risks for both mother and child.</p>
-                </div>
-                <div class="race">
-                    <img src="assets/icon-race.svg" alt="icon-race">
-                    <span>Race</span>
-                    <p>Certain health concerns may affect<br>individuals of some Black and Asian<br>origins at lower BMIs than others. To<br>learn more, it is advised to discuss this<br>with your GP or practice nurse.</p>
-                </div>
+        </div>
+        <div class="fourth-content">
+            <div class="age">
+                <img class="icon-img" src="assets/icon-age.svg" alt="icon-age">
+                <span>Age</span>
+                <p class="third-content-explanation">In aging individuals, increased body fat<br>and muscle loss may cause BMI to<br>underestimate body fat content.</p>
+            </div>
+            <div class="muscle">
+                <img class="icon-img" src="assets/icon-muscle.svg" alt="icon-muscle">
+                <span>Muscle</span>
+                <p class="third-content-explanation">BMI may misclassify muscular<br>individuals as overweight or obese, as<br>it doesn't differentiate muscle from fat.</p>
+            </div>
+        </div>
+        <div class="fifth-content">
+            <div class="pregnancy">
+                <img class="icon-img" src="assets/icon-pregnancy.svg" alt="icon-pregnancy">
+                <span>Pregnancy</span>
+                <p class="third-content-explanation">Expectant mothers experience weight<br>gain due to their growing baby.<br>Maintaining a healthy pre-pregnancy<br>BMI is advisable to minimise health<br>risks for both mother and child.</p>
+            </div>
+            <div class="race">
+                <img class="icon-img" src="assets/icon-race.svg" alt="icon-race">
+                <span>Race</span>
+                <p class="third-content-explanation">Certain health concerns may affect<br>individuals of some Black and Asian<br>origins at lower BMIs than others. To<br>learn more, it is advised to discuss this<br>with your GP or practice nurse.</p>
             </div>
         </div>
     </main>
     <footer></footer>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

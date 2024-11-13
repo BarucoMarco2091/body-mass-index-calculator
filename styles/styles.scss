@@ -8,63 +8,9 @@
 }
 
 @import '../styles/variables.scss';
+@import '../styles/header.scss';
 
-header {
-    background: $background-gradient-600;
-    width: 160dvh;
 
-    #container {
-        display: flex;
-        flex-direction: column;
-        height: 100dvh;
-    }
-
-    .description {
-        margin-left: 25dvh;
-        margin-top: 10dvh;
-
-        .logo {
-            margin-bottom: 7dvh;
-            max-width: 100%;
-            height: auto;
-        }
-
-        .main-title {
-            font-family: 'Inter', serif, sans-serif;
-            font-size: 4rem;
-            margin-bottom: 6dvh;
-            color: $neutral-900;
-        }
-
-        .paragraph-description {
-            font-family: 'Inter', serif, sans-serif;
-            font-size: 1rem;
-            color: $neutral-800;
-            line-height: 1.5rem;
-        }
-    }
-
-    .blue {
-        width: 30dvh;
-        height: 100dvh;
-        background: $accent-500-op;
-        position: absolute;
-        z-index: 3;
-        left: 160dvh;
-        border-radius: 0dvh 0dvh 5dvh 0dvh;
-    }
-
-  #calculator {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 6;
-    left: 120dvh;
-    top: -30dvh;
-    width: 50dvh;
-    background-color: white;
-  }
-}
 
 body {
     .fifth-content {
